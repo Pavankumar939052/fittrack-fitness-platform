@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     secret_key: str = "fittrack-local-development-secret-change-before-deployment"
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
+    frontend_url: str = "http://localhost:5173"
 
     model_config = SettingsConfigDict(
         env_file=".env",
